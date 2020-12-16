@@ -24,7 +24,7 @@ function Form(props) {
           />
         </label> Title 
         <label>
-          <select name="Title" onChange={onChange} value={values.title}>
+          <select name="title" onChange={onChange} value={values.title}>
             <option value="">---Select One---</option>
             <option value="Data_Science">Data_Science</option>
             <option value="Project_Manager">Project_Manager</option>
@@ -44,4 +44,4 @@ function Form(props) {
   )
 }
 
-export default Form
+export default Form;

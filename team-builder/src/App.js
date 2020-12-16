@@ -46,7 +46,7 @@ function App() {
     const newMember = {
       name: formValues.name.trim(),
       email: formValues.email.trim(),
-      title:formValues.title.trim(),
+      title: formValues.title.trim(),
     }
 
     setFriends([newMember, ...friends])
@@ -57,7 +57,7 @@ function App() {
 
   return (
     <div className="App">
-      Simple Team Building Form!
+      New Team Members!
       <Form
       values={formValues}
       onChange={onChange}
@@ -66,7 +66,7 @@ function App() {
       {
         friends.map(friend => {
           return (
-            <div key={friend.id}>
+            <div className= "friendsBorder" key={friend.id}>
               <h2>{friend.name}</h2>
               <h3>{friend.email}</h3>
               <h3>{friend.title}</h3>
