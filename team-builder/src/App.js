@@ -46,7 +46,7 @@ function App() {
     const newMember = {
       name: formValues.name.trim(),
       email: formValues.email.trim(),
-      role:formValues.role.trim(),
+      title:formValues.title.trim(),
     }
 
     setFriends([newMember, ...friends])
